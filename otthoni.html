@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    2. A hálózat műszaki megvalósítása (3-4 perc) Simon Krisztián
+2.1. Eszközök és szoftverek
+*"A projekt megvalósításához többféle eszközt és szoftvert használtunk:
+Hálózati eszközök szimulációja:
+A routerek (Cisco 2811, 2911) és switchek (Cisco 2960) szimulációját a Cisco Packet Tracer segítségével végeztük. A hálózatban VLAN-okat, OSPF útvonalválasztást állítottunk be.
+Szerverek beállítása:
+Windows Server 2022 és Ubuntu Server 22.04 rendszereket használtunk. A Windows szerveren Active Directory, DNS és DHCP szolgáltatásokat, a Linux szerveren Apache webszervert és Samba fájlmegosztást konfiguráltunk.
+
+
+
+2.2. Redundancia és rendelkezésre állás
+*"A hálózat megbízhatóságát redundáns konfigurációkkal biztosítottuk:
+A routereknél HSRP (Hot Standby Router Protocol) gondoskodik arról, hogy egy meghibásodás esetén az átjáró automatikusan átálljon egy másik routerre.
+
+
+
+A switch-ek között Spanning Tree Protocol (STP) működik, amely megakadályozza a hálózati hurkok kialakulását."*
+
+
+
+2.3. Szerverek és szolgáltatások konfigurálása
+"A központi irodában Active Directory szolgáltatást telepítettünk a felhasználók és jogosultságok kezelésére.
+ A fájlmegosztás Samba és NFS protokollokon keresztül működik, így mind Windows, mind Linux kliensek csatlakozni tudnak a hálózathoz.
+ A DHCP és DNS szerverek pedig biztosítják az IP-címek kiosztását és a névfeloldást."
+
+</body>
+</html>
